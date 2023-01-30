@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "$NullType": "readonly",
+    "$DeepPartial": "readonly",
+    "$Without": "readonly",
+    "$NullUndefinedType": "readonly",
+    "$MapType": "readonly",
+    "$VoidFunc": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "@typescript-eslint/lines-between-class-members": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "class-methods-use-this": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-return-await": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-nested-ternary": 0,
+    "max-classes-per-file": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-empty-interface": "off"
+  }
+}
